@@ -25,30 +25,7 @@
 </head>
 <body class="demo">
 
-<div id="loader-wrapper">
-  <div id="loader">
-    <div class="sq">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-    <div class="sq">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-    <div class="sq">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-     
-  </div>
 
-  <div class="loader-section section-left"></div>
-  <div class="loader-section section-right"></div>
-
-</div>
 <!-- Demo content -->
 <div id="demo-content">
 
@@ -118,7 +95,7 @@
 //
 // });
 
-lemonReady = function( fn ) {
+sqReady = function( fn ) {
 	if ( 'function' !== typeof fn ) { // Sanity check
 		return;
 	}
@@ -128,7 +105,7 @@ lemonReady = function( fn ) {
 	document.addEventListener( 'DOMContentLoaded', fn, false );
 };
 
-lemonReady(function () {
+sqReady(function () {
 	setTimeout(function(){
 		document.body.classList.add('loaded');
 	}, 3000);
